@@ -95,7 +95,11 @@ public class ConsoleInteraction {
 	}
 	public void getChoiceInput(){
 		System.out.println("Enter your choice here : ");
-		choice= scanner.nextInt();
+		try {
+		choice= Integer.valueOf(scanner.next());
+		}catch (Exception e) {
+			choice =0;
+		}
 	}
 	public int getApIdInput() {
 		System.out.println("Enter appointments id :");

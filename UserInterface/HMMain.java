@@ -9,7 +9,7 @@ import HospitalInfrastructure.Doctor;
 import HospitalInfrastructure.Hospital;
 import HospitalInfrastructure.Patient;
 
-public class Main {
+public class HMMain {
 	private boolean isOver=false;
 	Hospital hospital = new Hospital();
 	Doctor currentDoctor;
@@ -21,7 +21,7 @@ public class Main {
 	}
 	public static void main(String[] args) {
 		ConsoleInteraction ci=new ConsoleInteraction();
-		Main main1=new Main();
+		HMMain main1=new HMMain();
 		while(true) {
 			ci.displayMainMenu();
 			ci.getChoiceInput();		
